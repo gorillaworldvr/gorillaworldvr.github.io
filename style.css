@@ -1,0 +1,57 @@
+:root{
+    --background: rgb(0, 16, 46);
+    --header: rgb(0, 226, 0);
+    --button: rgb(255, 255, 255);
+    --button-hover: rgb(59, 53, 44);
+}
+
+@font-face {
+    font-family: 'Pixeloid';
+    src: url('Pixeloid.woff');
+}
+
+body{
+    margin: 0;
+    font-family: 'Pixeloid';
+    font-size: 20px;
+}
+
+.section{
+    text-align: center;
+    border-radius: 8px;
+}
+
+.nav-button{
+    float: left;
+    margin: 20px;
+    width: 108px;
+    height: 70px;
+}
+
+button {
+    font-family: 'Pixeloid';
+    text-align: center;
+
+    transition-duration: 0.2s;
+    background-color: var(--button);
+    border: 0;
+    cursor: pointer;
+    color: black;
+    border-radius: 8px;
+    line-height: 400%;
+}
+
+button:hover{
+    background-color: var(--button-hover);
+    color:white;
+}
+
+.header{
+    background-color: var(--header);
+    width: 100%;
+    margin: 0;
+    display: block;
+    padding: 0;
+    align-items: left;
+    overflow: hidden;
+}
