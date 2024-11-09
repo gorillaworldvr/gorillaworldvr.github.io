@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Gorilla World</title>
+        <meta content="Gorilla World" property="og:title" />
+        <meta content="The creative gorilla game." property="og:description" />
+        <meta content="https://www.gorillaworldvr.com" property="og:url" />
+        <meta content="https://gorillaworldvr/icon.png" property="og:image" />
+        <meta content="#00e200" data-react-helmet="true" name="theme-color" />
+        <meta name="keywords" content ="gorilla world, gorilla world vr download, gorillaworld, gorilla world, vr creative, gorilla locomotion creation" />
+    </head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <script src="../loader.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <body>
+        <div id="header"></div>
+        <div class="section" id="notFound">
+            <h1 style="font-size: 100px;">Uh oh!</h1>
+            <p style="font-size: 50px;">This player was not found.</p>
+        </div>
+        <div id="player" class="section" style="display: flex; text-align: left;">
+            <img id="image" class="section" style="height: 300px; margin-left: 0;" src="https://api.gorillaworldvr.com/api/images/v1/DefaultProfile.jpg">
+            <div>
+                <h1 id="username" style="font-size: 100px;">Player Name</h1>
+                <p id="createdAt" style="font-size: 20px;">Joined: 01-01-2000 00:00</p>
+            </div>
+        </div>
+        <div id="baseMaps" class="section" style="text-align: left;">
+            <h1 style="font-size: 60px;">Maps</h1>
+            <div class="section" style="margin-left: 0;">
+                <div id="maps">
+                    <div class="section" style="background-color: antiquewhite; display: flex; margin-left: 0;" id="map">
+                        <img id="mapImage" class="section" style="height: 300px" src="https://api.gorillaworldvr.com/api/images/v1/DefaultProfile.jpg">
+                        <div style = "text-align: left;">
+                            <h1 id="mapName" style="font-size: 100px;">Cool map</h1>
+                            <p id="mapDescription" style="font-size: 20px;">This is a test description to see how the different things will format. I'm unsure if it will actually format well or not but that's why I'm testing this.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../api.js"></script>
+    <script src="player.js"></script>
+</html>
