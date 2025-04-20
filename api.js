@@ -10,3 +10,13 @@ async function api(endpoint){
 
     return await response.json();
 }
+
+async function apiString(endpoint){
+    var uri = url + endpoint;
+    var response = await fetch(uri);
+    if (!response.ok){
+        throw new Error("Someting went wrong: " + response.status);
+    }
+
+    return response.text();
+}
