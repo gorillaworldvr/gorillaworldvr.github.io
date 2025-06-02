@@ -1,4 +1,4 @@
-const release = new Date(Date.UTC(2025, 6, 28, 15, 0, 0, 0))
+const release = new Date(Date.UTC(2025, 5, 28, 15, 0, 0, 0))
 const SECOND_IN_MILLISECONDS = 1000;
 const MINUTE_IN_MILLISECONDS = SECOND_IN_MILLISECONDS * 60;
 const HOUR_IN_MILLISECONDS = MINUTE_IN_MILLISECONDS * 60;
