@@ -6,7 +6,7 @@ document.getElementById("maps").removeChild(defaultMap)
 loadPlayer(urlParams.get('name'));;
 
 async function loadPlayer(name){
-    var player = await api("api/players/v1/" + name);
+    var player = await api("api/players/v1/get/" + name);
     if (player == null){
         document.getElementById("player").remove();
         document.getElementById("baseMaps").remove();
